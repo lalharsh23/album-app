@@ -1,0 +1,88 @@
+.card__container{
+    display: flex;
+    min-width: 14rem;
+    max-width: 14rem;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.80);
+    border-radius: 15px;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 3px 2px #4d4772d4;
+    
+}
+.album__icon{
+    width: 50%;
+    max-width: 100px;
+    min-width: 100px;
+}
+.album__details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    gap: 10px;
+    
+}
+
+
+.album__details .album__title h5{
+    color: #162447;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+  
+}
+
+.action__button{
+    width: 100%;
+    display: flex;
+    justify-content:space-between; 
+}
+
+.action__button button{
+    /* background-color: #162447; */
+    background: linear-gradient(to right, #f12711ee, #f5af19ea);
+    padding:10px 10px;
+    border-radius:25px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+}
+
+.action__button button>svg{
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.sub-title__edit,.sub-title__delete{
+    position: absolute;
+    /* color: #162447; */
+    background: linear-gradient(to right, #f12711a0, #f5af1989);
+    top: -32px;
+    padding: 3px ;
+    border-radius: 5px;
+    color: white;
+    z-index: 5;
+    display: none;
+    
+}
+
+.edit_btn:hover + .sub-title__edit{
+    display: block;
+}
+
+.delete_btn:hover + .sub-title__delete{
+    display: block;
+}
+
+
+.action__icon{
+    position: relative;
+}
